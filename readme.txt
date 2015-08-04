@@ -1,4 +1,4 @@
-=== Inline Read More ===
+=== WP Show more ===
 Contributors: JAMOS Web Service
 Donate link:  http://www.jamos.ch
 Tags: show more, more, less, read more, read less
