@@ -1,0 +1,9 @@
+.show_more_title {
+   cursor: pointer;
+   text-decoration: underline;
+   font-weight: bold;
+   color: red;
+}
+.show_more_body {
+   display: none;
+}
