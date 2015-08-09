@@ -1,10 +1,10 @@
-=== WP Show more ===
+=== WP show more ===
 Contributors: JAMOS Web Service
 Donate link:  http://www.jamos.ch
 Tags: show more, more, less, read more, read less
 Requires at least: 3.0.1
 Tested up to: 4.2.4
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,11 +15,11 @@ Hide the Text between a simple Shortcode.
 This plugin hides the text that is defined between the simple Shortcode. By clicking on the user-defined link, the hidden text becomes visible. It works via a Shortcode and can be placed everywhere!
 
 <p>
-Usage: <strong>[show_more title="Read more" color="#0066CC"] Your hidden Content [/show_more]</strong>
+Usage: <strong>[show_more title="Read more" color="#0066CC" list="-"] Your hidden Content [/show_more]</strong>
 </p>
 
 <p>
-Feel free to try it <a target="_blank" href="http://www.jamos.ch/plugins/wp-show-more">HERE</a>
+Feel free to try it <a href="http://www.jamos.ch/plugins/wp-show-more" target="_blank">HERE</a>
 </p>
 
 == Installation ==
@@ -27,7 +27,7 @@ Feel free to try it <a target="_blank" href="http://www.jamos.ch/plugins/wp-show
 All you have to do is upload the plugin within your Wordpress Plugins menu and activate it. 
 Then, you can add the shortcode everywhere you want (pages, posts, widgets etc): 
 
-<strong>[show_more title="Read more" color="#0066CC"] Your hidden Content [/show_more]</strong> 
+<strong>[show_more title="Read more" color="#0066CC" list="-"] Your hidden Content [/show_more]</strong> 
 
 Of course, you can customize the text "Read more".
 In case that you have any support inquiries, feel free to contact me.
@@ -51,7 +51,13 @@ In case that you have any support inquiries, feel free to contact me.
 = 1.0.1 =
 The Shortcode with a new attribute [color=“#0066cc“] extended
 
+= 1.0.2 =
+The Shortcode with a new attribute [list=“-“] extended
+
 == Upgrade Notice ==
 
 = 1.0.1 =
 The Shortcode with a new attribute [color=“#0066cc“] extended
+
+= 1.0.2 =
+The Shortcode with a new attribute [list=“-“] extended
