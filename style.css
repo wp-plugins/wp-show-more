@@ -1,9 +1,22 @@
-.show_more_title {
+.wpsm-show a, .wpsm-show:active, .wpsm-show:visited {
    cursor: pointer;
    text-decoration: none;
-   font-weight: bold;
 }
-
-.show_more_body {
-   display: none;
+.wpsm-show:hover {
+   cursor: pointer;
+   text-decoration: underline;
+}
+.wpsm-hide a, .wpsm-hide:active, .wpsm-hide:visited {
+   cursor: pointer;
+   text-decoration: none;
+}
+.wpsm-hide:hover {
+   cursor: pointer;
+   text-decoration: underline;
+}
+.wpsm-content-hide {
+  display: none;
+}
+p {
+  padding: 0px;
 }
