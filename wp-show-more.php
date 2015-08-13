@@ -12,23 +12,22 @@ Text Domain: WP show more
 */
 
 
-add_shortcode( 'show_more', 'sm');
-
-function sm( $attr, $content ) {
+add_shortcode( 'show_more', 'wpsm');
+function wpsm( $attr, $content ) {
   if (!isset($attr['color'])) $attr['color'] = '#cc0000';
   if (!isset($attr['list'])) $attr['list'] = '';
   if (!isset($attr['more'])) $attr['more'] = 'show more';
   if (!isset($attr['less'])) $attr['less'] = 'show less';
-  $string  = '<div class="show_more">';
-  $string .= '<a class="wpsm-show" style="color: ' . $attr['color'] . ' ">'; 
-  $string .= $attr['list']. ' '  . $attr['more'];
-  $string .= '</a><div class="wpsm-content">';
-  $string .= $content;
-  $string .= '<a class="wpsm-hide" style="color: ' . $attr['color'] . ' ">'; 
-  $string .= $attr['list']. ' '  . $attr['less'];
-  $string .= '</a>';
-  $string .= '</div></div>';
-  return $string;
+  $wpsm_string  = '<div class="show_more">';
+  $wpsm_string .= '<p class="wpsm-show" style="color: ' . $attr['color'] . ' ">'; 
+  $wpsm_string .= $attr['list']. ' '  . $attr['more'];
+  $wpsm_string .= '</p><div class="wpsm-content">';
+  $wpsm_string .= $content;
+  $wpsm_string .= ' <p class="wpsm-hide" style="color: ' . $attr['color'] . ' ">'; 
+  $wpsm_string .= $attr['list']. ' '  . $attr['less'];
+  $wpsm_string .= '</p>';
+  $wpsm_string .= '</div></div>';
+  return $wpsm_string;
 }
 
 add_action( 'wp_enqueue_scripts', 'sm_scripts');
@@ -36,11 +35,11 @@ function sm_scripts (){
   $plugin_url = plugins_url( '/', __FILE__ );
   wp_enqueue_style (
   	'sm-style',
-  	$plugin_url . 'style.css'
+  	$plugin_url . 'wpsm-style.css'
   );
   wp_enqueue_script (
   	'sm-script',
-  	$plugin_url . 'script.js',
+  	$plugin_url . 'wpsm-script.js',
   	array( 'jquery' ),
   	'1.0.0',
   	true
