@@ -15,7 +15,7 @@ Hide the Text between a simple Shortcode.
 This plugin hides the text that is defined between the simple Shortcode. By clicking on the user-defined link, the hidden text becomes visible. It works via a Shortcode and can be placed everywhere!
 
 <p>
-Usage: <strong>[show_more more="show more" less="show less" color="#0066CC" list="»"] Your hidden Content [/show_more]</strong>
+Usage: <strong>[show_more more="your text" less="your text" color="#0066CC" list="»"] Your hidden Content [/show_more]</strong>
 </p>
 
 <p>
@@ -35,8 +35,22 @@ In case that you have any support inquiries, feel free to contact me.
 == Frequently Asked Questions ==
 
 = Does the plugin works with any version of WordPress? =
-
 <strong>Yes</strong> it does.
+
+= How can I change the Link color? =
+You can define the color with the attribute <strong>[color=“#ffcc00”]</strong> in the shortcode.
+
+= Can I put a specific character in front of the link? =
+Yes you can. Define the character  with the attribute <strong>[list=“-”]</strong> in the shortcode.
+
+= How can I change the link text =
+Define the «read more» and «read less» text with the attribute <strong>[more=“your text”]</strong> and <strong>[less=“your text”]</strong>in the shortcode.
+
+= Which attributes are possible? =
+* more="show more"
+* less="show less"
+* color="#0066CC"
+* list="»"
 
 == Screenshots ==
 
