@@ -4,7 +4,7 @@ Donate link:  http://www.jamos.ch
 Tags: show more, more, less, read more, read less
 Requires at least: 3.0.1
 Tested up to: 4.2.4
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -55,13 +55,17 @@ Define the «read more» and «read less» text with the attribute <strong>[more
 == Screenshots ==
 
 1. show more deactivated
-2. shoe more activated (after click)
+2. show more activated (after click)
 
 == Upgrade Notice ==
 
 You can upgrade your Plugin manually or automatically.
 
 == Changelog ==
+
+= 1.0.4 =
+* Fix the message «headers already sent»
+* Add the JavaScript code to the footer
 
 = 1.0.3 =
 New functions, which allows you to use the shortcodes "more" and "less"

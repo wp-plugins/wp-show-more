@@ -6,8 +6,8 @@ jQuery('.wpsm-show').on('click', function(e) {
   e.preventDefault();
 });
 jQuery('.wpsm-hide').on('click', function(e) {
-  var p = jQuery(this).parent('.wpsm-content');
-  p.addClass('wpsm-content-hide');
-  p.prev('.wpsm-show').removeClass('wpsm-content-hide');
+  var wpsm = jQuery(this).parent('.wpsm-content');
+  wpsm.addClass('wpsm-content-hide');
+  wpsm.prev('.wpsm-show').removeClass('wpsm-content-hide');
   e.preventDefault();
 });

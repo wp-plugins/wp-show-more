@@ -3,7 +3,7 @@
 Plugin Name: WP show more
 Plugin URI:  http://plugins.wordpress.org/wp-show-more/
 Description: Add a user-defined link to display more content.
-Version:     1.0.3
+Version:     1.0.4
 Author:      JAMOS Web Service
 Author URI:  http://www.jamos.ch/plugins/wp-show-more
 License:     GPL2
@@ -13,7 +13,7 @@ Text Domain: WP show more
 
 
 add_shortcode( 'show_more', 'wpsm');
-function wpsm( $attr, $content ) {
+function wpsm( $attr, $smcontent ) {
   if (!isset($attr['color'])) $attr['color'] = '#cc0000';
   if (!isset($attr['list'])) $attr['list'] = '';
   if (!isset($attr['more'])) $attr['more'] = 'show more';
@@ -22,7 +22,7 @@ function wpsm( $attr, $content ) {
   $wpsm_string .= '<p class="wpsm-show" style="color: ' . $attr['color'] . ' ">'; 
   $wpsm_string .= $attr['list']. ' '  . $attr['more'];
   $wpsm_string .= '</p><div class="wpsm-content">';
-  $wpsm_string .= $content;
+  $wpsm_string .= $smcontent;
   $wpsm_string .= ' <p class="wpsm-hide" style="color: ' . $attr['color'] . ' ">'; 
   $wpsm_string .= $attr['list']. ' '  . $attr['less'];
   $wpsm_string .= '</p>';
@@ -41,9 +41,10 @@ function sm_scripts (){
   	'sm-script',
   	$plugin_url . 'wpsm-script.js',
   	array( 'jquery' ),
-  	'1.0.0',
+  	'1.0.1',
   	true
   );
 }
-?>
 
+add_action('wp_footer', 'sm_scripts');
+?>
